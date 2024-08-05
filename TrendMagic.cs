@@ -195,8 +195,8 @@ namespace NinjaTrader.NinjaScript.Indicators
                 drawLevelWithTextI(showMagic&&bearTick!=0, "↓", " ShortSignal ", bearTick,bearTickTime,Time[0],Brushes.HotPink,textFont,1);
 				drawLevelWithTextI(showMagic&&bullTick!=0, "↑", " LongSignal", bullTick,bullTickTime,Time[0],Brushes.Gold,textFont,1);
 
-                if (showArrows && bullTick != 0) Draw.TriangleUp(this, "TrendUp" + CurrentBar.ToString(), true, 0, Low[0] - 20 * TickSize, Brushes.Green);
-                if (showArrows && bearTick != 0) Draw.TriangleDown(this, "TrendDown" + CurrentBar.ToString(), true, 0, High[0] + 20 * TickSize, Brushes.Red);
+                if (showArrows && bullTick != 0) Draw.TriangleUp(this, "TrendUp" + CurrentBar.ToString(), true, 0, Low[0] - 10 * TickSize, Brushes.Green);
+                if (showArrows && bearTick != 0) Draw.TriangleDown(this, "TrendDown" + CurrentBar.ToString(), true, 0, High[0] + 10 * TickSize, Brushes.Red);
             }
 			
 			if (BarsInProgress == 1){
